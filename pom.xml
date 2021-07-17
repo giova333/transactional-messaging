@@ -10,7 +10,7 @@
     <packaging>pom</packaging>
 
     <modules>
-        <module>polling-publisher</module>
+        <module>delivery</module>
     </modules>
 
 </project>

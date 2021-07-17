@@ -17,11 +17,10 @@ services:
       - "2181:2181"
     environment:
       - KAFKA_ADVERTISED_HOST_NAME=zookeeper
-  postgres:
-    image: postgres
+  mysql:
+    image: debezium/example-mysql
     ports:
-    - "5432:5432"
+      - 3306:3306
     environment:
-      - POSTGRES_USER=user
-      - POSTGRES_PASSWORD=password
-      - POSTGRES_DB=test
+      - MYSQL_DATABASE=delivery
+      - MYSQL_ROOT_PASSWORD=password
